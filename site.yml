@@ -1,0 +1,6 @@
+---
+- hosts: anaconda
+  gather_facts: true
+  become: yes
+  roles:
+    - { role: andrewrothstein.anaconda }
