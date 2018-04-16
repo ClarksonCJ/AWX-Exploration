@@ -15,7 +15,7 @@ Vagrant.configure("2") do |config|
     # Allocating a static IP here causes Vagrant to hang when reloading the box
     # Since we have no need for a static IP we allocate it dynamically, which
     # solves the problem
-    target.vm.network :private_network, type: "dhcp"
+    config.vm.network "public_network", ip: "192.168.0.175"
   end
 
   # To avoid Authentication failure on Mac
