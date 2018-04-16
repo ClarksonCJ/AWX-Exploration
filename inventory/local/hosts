@@ -1,7 +1,6 @@
 [anaconda]
-localhost
+192.168.0.175
 
 [anaconda:vars]
-ansible_port=2222
 ansible_ssh_user=vagrant
 ansible_ssh_private_key_file=~/.vagrant.d/insecure_private_key
